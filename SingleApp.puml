@@ -1,0 +1,11 @@
+@startuml SingleAppNewNote
+Browser -> Server : GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server --> Browser : HTML document
+Browser -> Server : GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server --> Browser : The CSS file
+Browser -> Server : GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server --> Browser : The JavaScript File
+Browser -> Server : GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server --> Browser : {JSON Content}
+
+@enduml
